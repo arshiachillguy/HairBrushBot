@@ -1,6 +1,6 @@
 package org.example;
 
-import org.example.conection.coection;
+import org.example.conection.connection;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
@@ -12,10 +12,10 @@ public class Main {
 
         try {
             TelegramBotsApi botsApi = new TelegramBotsApi(DefaultBotSession.class);
-            botsApi.registerBot(new coection.MyTelegramBot());
+            botsApi.registerBot(new connection.MyTelegramBot());
             System.out.println(" ربات با موفقیت راه‌اندازی شد!");
         } catch (Exception e) {
-            System.err.println("❌ خطا در اتصال به Telegram API: " + e.getMessage());
+            System.err.println(" ❌ خطا در اتصال به Telegram API: " + e.getMessage());
             e.printStackTrace();
         }
 
