@@ -13,7 +13,7 @@ public class database {
         public static Connection connect() {
             try {
                 Connection conn = DriverManager.getConnection(URL, USER, PASSWORD);
-                System.out.println("اتصال موفق!");
+                System.out.println("اتصال موفق در دیتا بیس  ");
                 return conn;
             } catch (SQLException e) {
                 System.err.println("خطا در اتصال: " + e.getMessage());
